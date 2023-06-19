@@ -1,0 +1,121 @@
+/* General */
+body {
+    /*background: #fff3da;*/
+}
+
+/* Nav (navigation) */
+.nav-link {
+    color: black;
+    font-size: 1.4em;
+}
+
+.nav {
+    border-bottom: 1px solid black;
+    padding: 15px;
+}
+
+.navbar-brand {
+    margin-right: 15vw;
+}
+
+/* Main */
+#main_logo_quote {
+    margin-top: 15vh;
+}
+
+.main_quote {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+.row .row-cols-3 {
+    display: flex;
+    justify-content: center;
+}
+
+#photo_demonstration_section {
+    margin-top: 8vh;
+    max-width: 80%;
+}
+
+#photo_demonstration_section img {
+    max-width: 100%;
+    height: auto;
+}
+
+#photo_demonstration_section .row .col {
+    display: flex;
+    align-items: center;
+}
+
+/* Section */
+.section {
+    margin-top: 15vh;
+
+}
+
+/* Section 2 */
+#section_2 .container {
+    max-width: 90%;
+}
+
+.section_quote {
+    font-size: 1.9em;
+    font-weight: 700;
+}
+
+#table_section_2 {
+    margin-top: 2vh;
+}
+
+#table_section_2 .col {
+    margin-top: 10vh;
+}
+
+.need_right_border {
+    border-right: 1px solid black;
+}
+
+#table_section_2 p {
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    font-size: 1.3em;
+}
+
+#table_section_2 h4 {
+    margin-bottom: 2vh;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+/* Section 3 */
+.section_3 {
+    width: 80%;
+}
+
+.section_quote_header {
+    margin-bottom: 10vh;
+}
+
+.section_3 img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.section_3 h5 {
+    font-size: 1.2em;
+}
+
+.section_3 p {
+    padding: 0;
+    margin: 0;
+}
+
+.section_3 .row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
