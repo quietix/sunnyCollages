@@ -1,4 +1,8 @@
 /* General */
+* {
+    box-sizing: border-box;
+}
+
 body {
     /*background: #fff3da;*/
 }
@@ -99,23 +103,37 @@ body {
     margin-bottom: 10vh;
 }
 
-.section_3 img {
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1vh;
+}
+
+.grid-container img {
     object-fit: cover;
     width: 300px;
     height: 300px;
+    transition: 0.5s;
 }
 
-.section_3 h5 {
-    font-size: 1.2em;
+.grid-container img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
-.section_3 p {
-    padding: 0;
+.img-wrapper {
+    overflow: hidden;
+}
+
+figcaption p {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+figure {
     margin: 0;
-}
-
-.section_3 .row {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    padding: 0;
 }
