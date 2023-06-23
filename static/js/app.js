@@ -1,4 +1,4 @@
-function updateFigcaptions(){
+function updateFigcaptions() {
     let images = document.querySelectorAll('.grid-container img')
 
     for (let i = 0; i < images.length; i++) {

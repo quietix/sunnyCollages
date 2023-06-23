@@ -3,23 +3,18 @@
     box-sizing: border-box;
 }
 
-body {
-    /*background: #fff3da;*/
-}
-
 /* Nav (navigation) */
-.nav-link {
-    color: black;
-    font-size: 1.4em;
+.navbar {
+    border-bottom: 1px solid;
 }
 
-.nav {
-    border-bottom: 1px solid black;
-    padding: 15px;
+#logo {
+    object-fit: cover;
+    width: 15vw;
 }
 
 .navbar-brand {
-    margin-right: 15vw;
+    margin-left: 5vw;
 }
 
 /* Main */

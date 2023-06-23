@@ -1,0 +1,17 @@
+@media (max-width: 1200px) {
+    .container .justify-content-center {
+        justify-content: flex-start;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-item {
+        margin-left: 0;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+}

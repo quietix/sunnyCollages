@@ -1,67 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/media_styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script type="module" src="../js/app.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/media_styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
     <title>Lunax</title>
 </head>
+
 <body>
-
-<!--    <nav class="navbar navbar-expand-lg">-->
-<!--        <div class="container-fluid">-->
-<!--            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--                <span class="navbar-toggler-icon"></span>-->
-<!--            </button>-->
-<!--            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">-->
-<!--                <ul class="nav justify-content-center">-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="navbar-brand" id="common_logo" href="#">-->
-<!--                            <img src="../images/logo.png" alt="logo" height="50em" width="100vw">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link active" aria-current="page" href="#">Галерея</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">Автори</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">Враження</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">Запитання</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">Контакти</a>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </nav>-->
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    {% block header %}{% endblock %}
 
     <div class="container text-center" id="main_logo_quote">
         <h1>LUNAX</h1>
@@ -74,13 +28,13 @@
     <div class="container text-center" id="photo_demonstration_section">
         <div class="row">
             <div class="col">
-                <img src="../images/demonstrative_photo_1.png" alt="demonstrative_photo">
+                <img src="{{ url_for('static', filename='images/demonstrative_photo_1.png') }}" alt="demonstrative_photo">
             </div>
             <div class="col">
-                <img src="../images/demonstrative_photo_2.jpg" alt="demonstrative_photo">
+                <img src="{{ url_for('static', filename='images/demonstrative_photo_2.jpg') }}" alt="demonstrative_photo">
             </div>
             <div class="col">
-                <img src="../images/demonstrative_photo_3.jpg" alt="demonstrative_photo">
+                <img src="{{ url_for('static', filename='images/demonstrative_photo_3.jpg') }}" alt="demonstrative_photo">
             </div>
         </div>
     </div>
@@ -119,13 +73,13 @@
         </div>
     </div>
 
-    <div class="container text-center section section_3">
+    <div class="container text-center section section_3" id="gallery-section">
         <h2 class="section_quote section_quote_header">Галерея LUNAX — джерело натхнення</h2>
         <div class="d-flex flex-wrap justify-content-evenly align-items-center">
             <div class="container grid-container">
                 <figure>
                     <div class="img-wrapper">
-                        <img src="../images/painting_1.png" class="img-thumbnail" alt="picture">
+                        <img src="{{ url_for('static', filename='images/painting_1.png') }}" class="img-thumbnail" alt="picture">
                     </div>
                     <figcaption>
                         <p>Когда человека не было на Земле</p>
@@ -133,7 +87,7 @@
                 </figure>
                 <figure>
                     <div class="img-wrapper">
-                        <img src="../images/painting_2.png" class="img-thumbnail" alt="picture">
+                        <img src="{{ url_for('static', filename='images/painting_2.png') }}" class="img-thumbnail" alt="picture">
                     </div>
                     <figcaption>
                         <p>Брызги шампанского о борт корабля</p>
@@ -141,7 +95,7 @@
                 </figure>
                 <figure>
                     <div class="img-wrapper">
-                        <img src="../images/painting_3.png" class="img-thumbnail" alt="picture">
+                        <img src="{{ url_for('static', filename='images/painting_3.png') }}" class="img-thumbnail" alt="picture">
                     </div>
                     <figcaption>
                         <p>Жизнь зарождалась в воде</p>
@@ -149,7 +103,7 @@
                 </figure>
                 <figure>
                     <div class="img-wrapper">
-                        <img src="../images/painting_4.png" class="img-thumbnail" alt="picture">
+                        <img src="{{ url_for('static', filename='images/painting_4.png') }}" class="img-thumbnail" alt="picture">
                     </div>
                     <figcaption>
                         <p>Весна, весна, весна - пришла</p>
@@ -157,7 +111,7 @@
                 </figure>
                 <figure>
                     <div class="img-wrapper">
-                        <img src="../images/painting_5.png" class="img-thumbnail" alt="picture">
+                        <img src="{{ url_for('static', filename='images/painting_5.png') }}" class="img-thumbnail" alt="picture">
                     </div>
                     <figcaption>
                         <p>Цвет папоротника</p>
@@ -165,7 +119,7 @@
                 </figure>
                 <figure>
                     <div class="img-wrapper">
-                        <img src="../images/painting_6.png" class="img-thumbnail" alt="picture">
+                        <img src="{{ url_for('static', filename='images/painting_6.png') }}" class="img-thumbnail" alt="picture">
                     </div>
                     <figcaption>
                         <p>Уточка приводнилась</p>
@@ -175,4 +129,5 @@
         </div>
     </div>
 </body>
+
 </html>
