@@ -1,0 +1,209 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <script src="{{ url_for('static', filename='js/gallery.js') }}"></script>
+{% endblock %}
+
+
+{% block body %}
+    <div class="d-flex p-3 px-md-4 mb-4 bg-white border-bottom shadow-sm">
+        <!--  MEDIUM+ screens  -->
+        <div class="d-none d-md-flex flex-row my-auto flex-grow-1 align-items-center">
+            <a class="navbar-brand mx-5" href="/">
+                <img id="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="logo">
+            </a>
+            <div class="d-flex flex-row-reverse flex-grow-1">
+                <a class="nav-link mx-3" href="/">Автори</a>
+                <a class="nav-link mx-3" href="/">Враження</a>
+                <a class="nav-link mx-3" href="/">Запитання</a>
+                <a class="nav-link mx-3" href="/">Контакти</a>
+            </div>
+        </div>
+
+        <!--  SMALL- screens  -->
+    </div>
+
+    <div class="container text-center" id="main_logo_quote">
+        <h1>LUNAX</h1>
+        <h1>Art collage gallery</h1>
+        <br>
+        <p class="main_quote">Авторські картини-колажі — джерело натхнення,</p>
+        <p class="main_quote">ексклюзивний подарунок і незвичайний акцент в інтер'єрі</p>
+    </div>
+
+    <div class="demo-photos">
+        <!--  LONG+ screens  -->
+        <div class="d-none d-lg-flex flex-row justify-content-center flex-wrap photo_demonstration_section">
+            <img class="demo-photo mx-3 mt-4" src="{{ url_for('static', filename='images/painting_1.png') }}" alt="demonstrative_photo">
+            <img class="demo-photo mx-3 mt-4" src="{{ url_for('static', filename='images/painting_2.png') }}" alt="demonstrative_photo">
+            <img class="demo-photo mx-3 mt-4" src="{{ url_for('static', filename='images/painting_3.png') }}" alt="demonstrative_photo">
+        </div>
+
+        <!--  SMALL-MEDIUM screens  -->
+        <div class="d-flex d-lg-none flex-row justify-content-center flex-wrap photo_demonstration_section">
+            <img class="demo-photo mx-3 mt-4" src="{{ url_for('static', filename='images/demonstrative_photo_1.png') }}" alt="demonstrative_photo">
+            <img class="demo-photo mx-3 mt-4" src="{{ url_for('static', filename='images/demonstrative_photo_3.jpg') }}" alt="demonstrative_photo">
+        </div>
+    </div>
+
+    <div class="container text-center section section_2">
+        <h2 class="section_quote">Картини-колажі — ексклюзивний подарунок</h2>
+        <div class="container">
+            <!--  LONG+ screens  -->
+            <div class="d-none d-lg-grid table_section_2">
+                <div class="row">
+                    <div class="col text-center need_right_border">
+                        <h4>Авторські прийоми</h4>
+                        <p>надають роботам
+                            стереоефект і багатовимірність</p>
+                    </div>
+                    <div class="col text-center need_right_border">
+                        <h4>Природні матеріали</h4>
+                        <p>наполняют композиции энергетикой живой природы</p>
+                    </div>
+                    <div class="col text-center">
+                        <h4>Прозора основа</h4>
+                        <p>дозволяє вписати картини
+                            в будь-який інтер'єр</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center need_right_border">
+                        <h4>Унікальність робіт</h4>
+                        <p>різні композиції навіть із однакових матеріалів</p>
+                    </div>
+                    <div class="col text-center need_right_border">
+                        <h4>Фантазійний сюжет</h4>
+                        <p>який хочеться розглядати, розгадувати й обговорювати</p>
+                    </div>
+                    <div class="col text-center">
+                        <h4>Позитивні емоції</h4>
+                        <p>картини завжди покращують настрій, іноді навіть лікують</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--  MEDIUM-LONG screens  -->
+            <div class="d-none d-md-grid d-lg-none table_section_2">
+                <div class="row">
+                    <div class="col text-center need_right_border">
+                        <h4>Авторські прийоми</h4>
+                        <p>надають роботам
+                            стереоефект і багатовимірність</p>
+                    </div>
+                    <div class="col text-center">
+                        <h4>Природні матеріали</h4>
+                        <p>наполняют композиции энергетикой живой природы</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center need_right_border">
+                        <h4>Прозора основа</h4>
+                        <p>дозволяє вписати картини
+                            в будь-який інтер'єр</p>
+                    </div>
+                    <div class="col text-center">
+                        <h4>Унікальність робіт</h4>
+                        <p>різні композиції навіть із однакових матеріалів</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center need_right_border">
+                        <h4>Фантазійний сюжет</h4>
+                        <p>який хочеться розглядати, розгадувати й обговорювати</p>
+                    </div>
+                    <div class="col text-center">
+                        <h4>Позитивні емоції</h4>
+                        <p>картини завжди покращують настрій, іноді навіть лікують</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--  MEDIUM- screens  -->
+            <div class="d-grid d-md-none table_section_2">
+                <div class="col text-center">
+                    <h4>Авторські прийоми</h4>
+                    <p>надають роботам
+                        стереоефект і багатовимірність</p>
+                </div>
+                <div class="col text-center">
+                    <h4>Природні матеріали</h4>
+                    <p>наполняют композиции энергетикой живой природы</p>
+                </div>
+                <div class="col text-center">
+                    <h4>Прозора основа</h4>
+                    <p>дозволяє вписати картини
+                        в будь-який інтер'єр</p>
+                </div>
+                <div class="col text-center">
+                    <h4>Унікальність робіт</h4>
+                    <p>різні композиції навіть із однакових матеріалів</p>
+                </div>
+                <div class="col text-center">
+                    <h4>Фантазійний сюжет</h4>
+                    <p>який хочеться розглядати, розгадувати й обговорювати</p>
+                </div>
+                <div class="col text-center">
+                    <h4>Позитивні емоції</h4>
+                    <p>картини завжди покращують настрій, іноді навіть лікують</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center section section_3" id="gallery-section">
+        <h2 class="section_quote section_quote_header">Галерея LUNAX — джерело натхнення</h2>
+        <div class="d-flex flex-wrap justify-content-evenly align-items-center">
+            <div class="container grid-container gallery">
+                <figure>
+                    <div class="img-wrapper">
+                        <img src="{{ url_for('static', filename='images/painting_1.png') }}" class="img-thumbnail" alt="picture">
+                    </div>
+                    <figcaption>
+                        <p>Когда человека не было на Земле</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="img-wrapper">
+                        <img src="{{ url_for('static', filename='images/painting_2.png') }}" class="img-thumbnail" alt="picture">
+                    </div>
+                    <figcaption>
+                        <p>Когда человека не было на Земле</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="img-wrapper">
+                        <img src="{{ url_for('static', filename='images/painting_3.png') }}" class="img-thumbnail" alt="picture">
+                    </div>
+                    <figcaption>
+                        <p>Когда человека не было на Земле</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="img-wrapper">
+                        <img src="{{ url_for('static', filename='images/painting_4.png') }}" class="img-thumbnail" alt="picture">
+                    </div>
+                    <figcaption>
+                        <p>Когда человека не было на Земле</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="img-wrapper">
+                        <img src="{{ url_for('static', filename='images/painting_5.png') }}" class="img-thumbnail" alt="picture">
+                    </div>
+                    <figcaption>
+                        <p>Когда человека не было на Земле</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="img-wrapper">
+                        <img src="{{ url_for('static', filename='images/painting_6.png') }}" class="img-thumbnail" alt="picture">
+                    </div>
+                    <figcaption>
+                        <p>Когда человека не было на Земле</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+{% endblock %}

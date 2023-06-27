@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin_styles.css') }}">
+{% endblock %}
+
+
+{% block body %}
+    <div class="d-flex p-3 px-md-4 mb-4 bg-white border-bottom shadow-sm">
+        <div class="d-flex flex-grow-1 align-items-center justify-content-center">
+            <a class="navbar-brand" href="/">
+                <img id="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="logo">
+            </a>
+        </div>
+    </div>
+{% endblock %}
